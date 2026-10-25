@@ -104,6 +104,9 @@ a{color:#3A47C2}a:hover{color:#E0457F}
 .cell{display:grid;place-items:center;padding:0;border:3px solid;border-color:#FFFFFF #8C84B4 #8C84B4 #FFFFFF;background:#DCD6F2;color:#1E1838;font-family:"Pixelify Sans","Courier New",monospace;font-size:17px;font-weight:700;cursor:pointer}
 .cell.open{border:1px solid #B4ACD6;background:#F5F2EA;cursor:default}
 .cell.boom{background:#FF7A3D}
+.chip{display:inline-block;padding:3px 10px;border:1.5px solid #2A2350;border-radius:12px;background:#FFFFFF;font-size:12px;color:#1E1838}
+.wbody .px{overflow-wrap:anywhere}
+@media (max-width:560px){.svc-grid{grid-template-columns:minmax(0,1fr)!important}}
 @media (max-width:760px){
 .ms-grid{grid-template-columns:minmax(0,1fr)}
 .wmp-rail{display:none}
@@ -274,17 +277,26 @@ a{color:#3A47C2}a:hover{color:#E0457F}
 <div class="wbody" style="display: flex; flex-direction: column; gap: 12px;">
 <p style="font-size: 15px;">Most businesses hire a strategist, a creative agency, a director, a designer, a web developer and a CRM consultant, then spend their time getting them to agree. I'm all of them, and strategy is what holds it together.</p>
 <div class="sunk" style="padding: 14px; display: flex; flex-direction: column; gap: 4px; border-color: #3A47C2;"><div class="px" style="font-size: 20px; font-weight: 700; color: #3A47C2;">Strategy.doc</div><div style="font-size: 14px;">Where everything starts. Positioning, audience, go-to-market, channel plans and the story you tell customers and investors, all built from real cultural insight.</div></div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+<div class="svc-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
 <div class="sunk" style="padding: 12px; display: flex; flex-direction: column; gap: 4px;"><div class="px" style="font-size: 17px; font-weight: 600; color: #E0457F;">Creative_and_Brand.ai</div><div style="font-size: 13px;">Ideas built to be shared, naming, identity, tone of voice and copy.</div></div>
 <div class="sunk" style="padding: 12px; display: flex; flex-direction: column; gap: 4px;"><div class="px" style="font-size: 17px; font-weight: 600; color: #D9561F;">Film_Direction.mov</div><div style="font-size: 13px;">Scripts, shoots and edits, from branded documentaries to comedy, for every format.</div></div>
 <div class="sunk" style="padding: 12px; display: flex; flex-direction: column; gap: 4px;"><div class="px" style="font-size: 17px; font-weight: 600; color: #0F7C80;">Design_and_Web.psd</div><div style="font-size: 13px;">Visual identity, campaign design and websites people remember.</div></div>
 <div class="sunk" style="padding: 12px; display: flex; flex-direction: column; gap: 4px;"><div class="px" style="font-size: 17px; font-weight: 600; color: #2A2350;">CRM_and_Automation.exe</div><div style="font-size: 13px;">CRM strategy and management, plus marketing automations built in Make.</div></div>
 </div>
+<div class="sunk" style="padding: 14px; display: flex; flex-direction: column; gap: 8px; border-color: #D9561F;">
+<div class="px" style="font-size: 20px; font-weight: 700; color: #D9561F;">White_Label.zip</div>
+<div style="font-size: 14px;"><b>For agencies.</b> Behind-the-scenes creative, under your name. I've spent eight years on the agency side, so I can slot into your team from the first brief to the pitch room.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span class="chip">Campaign planning</span>
+<span class="chip">Pitching</span>
+<span class="chip">Ideation</span>
+<span class="chip">Scriptwriting</span>
+</div>
+</div>
 <div class="sunk" style="padding: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;"><div style="font-size: 13px; min-width: 0; flex: 1 1 240px;"><b>Want all of it on tap?</b> Hire me as your fractional CMO.</div><button class="btn" @click="openCmo">Run Fractional_CMO.exe</button></div>
 <div class="sunk" style="padding: 12px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px;">
 <span><b>Also running:</b></span>
 <span>Storytelling workshops for teams</span>
-<span>White-label pitch partner for agencies</span>
 </div>
 <div><button class="btn go" @click="openContact">Book a chat</button></div>
 </div>
@@ -553,7 +565,7 @@ a{color:#3A47C2}a:hover{color:#E0457F}
 <span class="ms-o">Status:</span><span>Open to new projects</span>
 <span class="ms-o">Here for:</span><span>Strategy, creative, film, design, web, CRM and automation</span>
 <span class="ms-o">Based:</span><span>UK, works anywhere</span>
-<span class="ms-o">Zodiac:</span><span>[your sign]</span>
+<span class="ms-o">Zodiac:</span><span>Taurus</span>
 <span class="ms-o">Education:</span><span>BA (2.1) Broadcast Media and Popular Culture, UWIC</span>
 <span class="ms-o">Tools:</span><span>HubSpot, Make, Airtable, Figma, Adobe CC, MailChimp, Campaign Monitor, Notion, Miro</span>
 </div>
