@@ -17,7 +17,7 @@ It's a static site with no build step.
 Add a window's name after `#` to open it on load, for example:
 
 - `madebymaddox.com/#bodyform` opens a case study (any case study slug works)
-- `#cases`, `#ms`, `#services`, `#cmo`, `#reel`, `#games`, `#quiz`, `#sweeper`, `#contact`
+- `#cases`, `#ms`, `#services`, `#cmo`, `#reel`, `#games`, `#quiz`, `#sweeper`, `#brandagotchi`, `#contact`
 
 ## Hosting
 
